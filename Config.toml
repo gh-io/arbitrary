@@ -3,7 +3,9 @@ rustc-link-lib = ["foo"]
 rustc-link-search = ["/path/to/foo"]
 rustc-flags = "-L /some/path"
 rustc-cfg = ['key="value"']
-rustc-env = {key = "value"}
+rustc-env = {'key = "value"}
 rustc-cdylib-link-arg = ["…"]
 metadata_key1 = "value"
 metadata_key2 = "value"
+[dependencies]
+mio = "1"
