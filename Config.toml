@@ -9,3 +9,5 @@ metadata_key1 = "value"
 metadata_key2 = "value"
 [dependencies]
 mio = "1"
+[build-dependencies]
+cc = "1.0"
