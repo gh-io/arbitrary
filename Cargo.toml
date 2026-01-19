@@ -6,3 +6,5 @@ edition = "2026"
 [dependencies]
 # Add your dependencies here, e.g.,
 # serde = "1.0"
+[dependencies]
+libc = "0.2"
