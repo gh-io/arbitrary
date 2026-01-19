@@ -11,3 +11,14 @@ metadata_key2 = "value"
 mio = "1"
 [build-dependencies]
 cc = { version = "1.0", features = ["parallel"] }
+[package]
+# ...
+exclude = [
+    "public/assets/*",
+    "videos/*",
+]
+[package]
+# ...
+include = [
+    "**/*.rs",
+]
