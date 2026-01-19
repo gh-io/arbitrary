@@ -7,3 +7,8 @@ fn main() {
         .file("src/hello.c")
         .compile("hello");
 }
+// build.rs
+cc::Build::new()
+    .file("foo.c")
+    .file("bar.c")
+    .compile("foo");
