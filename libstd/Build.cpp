@@ -1,0 +1,5 @@
+cc::Build::new()
+    .cpp(true)
+    .file("foo.cpp")
+    .cpp_link_stdlib("stdc++") // use libstdc++
+    .compile("foo");
