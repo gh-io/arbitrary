@@ -1,54 +1,11 @@
 [package]
 name = "arbitrary"
 version = "0.1.0"
-edition = "2024"
-authors = ["seriki yakub"]
-description = "Low-level utilities for arbitrary data processing"
-license = "BSD-3-Clause"
-repository = "https://github.com/gh-io/arbitrary"
-keywords = ["compression", "systems", "ffi", "binary"]
-categories = ["compression", "system"]
-readme = "README.md"
-
-# ---------------------------------------
-# Features
-# ---------------------------------------
-[features]
-default = []
-
-# Compression backends
-snappy = ["dep:snap"]
-zstd = ["dep:zstd"]
-lz4 = ["dep:lz4_flex"]
-
-# ---------------------------------------
-# Dependencies (optional + gated)
-# ---------------------------------------
-[dependencies]
-snap = { version = "1.1", optional = true }
-zstd = { version = "0.13", optional = true }
-lz4_flex = { version = "0.11", optional = true }
-
-# Utilities
-thiserror = "1.0"
-bytes = "1.5"
-
-# ---------------------------------------
-# Dev / bench
-# ---------------------------------------
-[dev-dependencies]
-criterion = "0.5"
+edition = "2021"
 
 [lib]
-crate-type = ["rlib"]
-
-[package]
-name = "hello_world"
-version = "0.1.0"
-edition = "2024"
+crate-type = ["cdylib"]
 
 [dependencies]
-# Add your dependencies here, e.g.,
-# serde = "1.0"
-[dependencies]
-libc = "0.2"
+snap = "1.1"   # Rust Snappy library
+libc = "0.2"   # For C types
