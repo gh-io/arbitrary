@@ -1,0 +1,2 @@
+$ cargo yank --version 1.0.1
+$ cargo yank --version 1.0.1 --undo
