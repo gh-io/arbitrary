@@ -1,2 +1,4 @@
 [build]
 rustc-wrapper = "/path/to/sccache"
+[target.x86_64-pc-windows-msvc]
+rustflags = ["-Ctarget-feature=+crt-static"]
