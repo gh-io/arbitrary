@@ -15,3 +15,8 @@ libc = "0.2"   # For C types
 [package]
 name = "arbitrary" # the name of the package
 version = "0.1.0" # the current version, obeying semver
+# [PROJECT_DIR]/hello_world/Cargo.toml
+[package]
+name = "hello_world" # the name of the package
+version = "0.1.0"    # the current version, obeying semver
+edition = "2024"     # the edition, will have no effect on a resolver used in the workspace
