@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KaTeX Demo - Examples</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.28/dist/katex.min.css" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.28/dist/katex.min.js" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.28/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.js" crossorigin="anonymous"></script>
+  <script defer>
+    window.WebFontConfig = { custom: { families: ['KaTeX_AMS', 'KaTeX_Main'] } };
+    document.addEventListener("DOMContentLoaded", function() {
+      renderMathInElement(document.body, {
+        delimiters: [
+          {left: "$$", right: "$$", display: true},
+          {left: "$", right: "$", display: false},
+          {left: "\\(", right: "\\)", display: false},
+          {left: "\\[", right: "\\]", display: true}
+        ]
+      });
+    });
+  </script>
+
+  <style>
+    body { padding: 20px; }
+    header { margin-bottom: 30px; }
+    nav a { margin-right: 15px; text-decoration: none; font-weight: bold; color: #333; }
+    nav a:hover { text-decoration: underline; }
+    .card { padding: 20px; border-radius: 8px; background: #f7f7f7; margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Math Examples</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="examples.html">Examples</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<div class="card">
+  <h2>Quadratic Formula</h2>
+  $$
+    x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+  $$
+</div>
+
+<div class="card">
+  <h2>Euler’s Identity</h2>
+  $$
+    e^{i\pi} + 1 = 0
+  $$
+</div>
+
+<div class="card">
+  <h2>Summation Example</h2>
+  $$
+    \sum_{n=1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6}
+  $$
+</div>
+
+</body>
+</html>
