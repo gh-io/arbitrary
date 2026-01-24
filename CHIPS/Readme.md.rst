@@ -1,4 +1,4 @@
-# CHIPS (Cookies Having Independent Partitioned State)
+## CHIPS (Cookies Having Independent Partitioned State)
 
 ## Editors
 
