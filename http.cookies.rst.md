@@ -1,4 +1,3 @@
-
 :mod:`!http.cookies` --- HTTP state management
 ==============================================
 
